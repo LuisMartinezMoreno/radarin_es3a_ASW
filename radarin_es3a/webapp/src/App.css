@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:
+    "PT Sans",
+    sans-serif;
+}
+
+.notification__item--custom {
+  z-index: 0;
+  background-color: white;
+  border-left: 8px solid #dd8ea4;
+}
+
+.notification__item--custom .notification__message,
+.notification__item--custom .notification__title {
+  color: black;
+}

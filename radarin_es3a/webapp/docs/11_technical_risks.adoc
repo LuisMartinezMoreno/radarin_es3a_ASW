@@ -1,0 +1,47 @@
+[[section-technical-risks]]
+== Risks and Technical Debts
+
+
+
+
+
+.Risks Table
+|=========================================================
+| Risk | Explanation | Solution 
+
+
+| SOLID
+| We have never used SOLID before, so we dont have any kind of knowledge about it. Also SOLID is a new technology with few documentation besides it being hard to work with it.
+| We can read the available documentation and ask for help to more veteran developers in this matter.
+
+| POD
+| The fact that this is a very new technology makes it hard to know something about it.
+| The only solution is to give it a try and use it by creating one and making different scenarios/tests with it. One very basic solution would be creating a contacts agenda with it.
+
+| REACT
+| In our team there is no one that knows about React. But we have previous knowledge about Js wich makes it easier to learn about it.
+| Trial and Error. We will have to explore the technology by directly using it to develop this application.
+
+| Docker
+| We dont need to know very much about it because is more important to focus our work into the other materials. Nevertheless we think is important to establish the very basics anyway.
+| We need to learn the basic commands and operations of this platform to properly work with it.
+
+| Git
+| We have some flaws with the basic command knowledge.
+| This is not a major problem because we have a lot of documentation of how to use git, also we have previous knowledge acquired throughout the past years.
+
+|=========================================================
+
+
+.Technical Debts Table
+|=========================================================
+| Technical Debt | Explanation 
+
+|Use React| We decided to use React because it bring us a lot of the facilities, such as a good compatibility with solid and a wide variety of documentation to about it. 
+|Use SOLID| The way we would use SOLID is using PODs bringing the user the control of their data and only storing the essential data in our data base, this data are the user nick, password and the WEBID, also we would store temporally the locations of the users till they logout the app.
+|CI for Radarin| Many problems were issued referring to GitHub CI, which are yet to be solved despite extensive research.
+|Notifications| Debate was established regarding notifications, which we stablished as messages sent via email.
+|Unitary tests| Low initial knowledge led to major difficulties in developing tests, which ballasted the efforts to work with them.
+
+|=========================================================
+

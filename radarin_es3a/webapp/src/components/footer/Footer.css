@@ -1,0 +1,23 @@
+
+.footerRad {
+  text-align: center !important;
+  padding: 1em 0 !important;
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  color: #777;
+  margin-top: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+}
+
+.footerRad.p {
+  text-align: center !important;
+}
+
+.footerRad a:active,
+a:visited,
+a:link {
+  text-decoration: none;
+  color: #fff;}

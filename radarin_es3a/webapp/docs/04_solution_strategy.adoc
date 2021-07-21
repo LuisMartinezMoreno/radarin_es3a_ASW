@@ -1,0 +1,69 @@
+***
+== Solution Strategy
+
+
+=== Backend
+
+.Solid-file-client:
+We will use this library to interchange information from POD and github. It works with json archives.
+
+.Inrupt-javascript-libraries:
+The libraries for the usage of the PODs, it is the union between the solid code and the POD storage.
+.Solid:
+It will be the core of the backend, everything will be managed using the SOLID principles.
+
+.NodeMailer API:
+This API will allow us to implement emails as a way of notificate the users
+
+.Firebase Cloud Messaging API:
+This API will allow us to have real time notifications, also a notification center for the user to see what he missed
+
+.MongoDB
+This will manage the database.
+
+.MongoDB Atlas
+It is a server of mongoDB, so the app will be able to get the informatiuon of the user wherever he is.
+
+=== Frontend
+.React-bootstrap:
+We will use this technology to make the designs, the UI.
+.GoogleMapsAPI:
+This API will simplify a lot the location and ubication requirements of the project.
+.React components
+For the implementation of the interface
+
+
+
+=== Developer Tools
+.Github managers:
+To simplify the usage of the github platform and avoid possible problems. Some people of the team use the native solution from github, github desktop, and some others use GitKraken, a third-party alternative
+
+.VSCode: 
+To develop the code.
+
+.Docker app
+The docker app configures the system to work with the docker environment.
+
+.XCode
+For the develop of the iOS app
+
+.Android Studio
+For the develop of the Andoid app
+
+
+=== How are going to be reached the non fuctional requirements?
+.Privacy:
+The users' location will only be stored while the user is connected.
+The essential information will be stored in SOLID PODs providing a strong privacy.
+
+.Usability:
+The interfaces will be intuitives and easy to use.
+
+.Performance:
+The performance will be smooth, by using technologies that improve it.
+
+.Testability:
+The app will be tested manually and automatically 
+***
+
+

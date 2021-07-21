@@ -1,0 +1,50 @@
+[[section-anexos]]
+== Annexed
+
+=== Tests
+
+The webb app and the REST API have been tested in order to solve the biggest ammount of issues
+
+==== Webapp
+
+===== Unitary testing 
+
+We have done tests about the main parts of the webapp:
+
+* Interface :
+
+** The app is rendered as spected, whatever the size of the screen is.
+** The interface changes if the user is logged, a regular user is using the app or the admin is using the app.
+** All the components show the spected info.
+** The admin window works as spected and anly appears if the admin is the logged user.
+** The login web page (Inrupt) is showed fine and redirects from and back to Radarin.
+
+===== Acceptance test
+
+We did an acceptance test to check if a user not logged in the app could access the friendlist of the application. Ideally, the user would be redirected to the Welcome page of the site.
+
+*Beggining: A user wants to access the friendlist functionality while not been logged in.
+
+*Actions performed: The user tries to access the /friend-list link.
+
+*End: The user is redirected to the Welcome page.
+
+==== Mobile app
+
+===== Unitary Testing
+
+We reproduced the same tests from the webapp.
+The information deployed shows perfectly fine for load format screens and the app is functional.
+Taking into account the facility of moving around with the phone, we proved that the real time location works, that means:
+
+* The user's mark moves while he moves.
+* The other users can se it.
+* The notifications work fine.
+
+===== Automatic tests
+Some automatic tests where developed, in order to automatize the task of debug the code.
+All the tests run automatic at the deploying task, and can be run locally by calling "npm -test".
+With this, we acomplish:
+* Increase the code coverage, which means that the code have the smallest ammount of errors as possible.
+* Ensure that the system works as spected.
+* Find improvement niches

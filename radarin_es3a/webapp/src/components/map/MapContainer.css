@@ -1,0 +1,13 @@
+.botonEncenderApagar {
+  margin-right: auto !important;
+  background-color: #e56387 !important;
+  color: white !important;
+}
+
+.sliderRow {
+  padding: 3vh;
+}
+
+.contenedorMapContainer {
+  max-height: calc(100% - 250px);
+}

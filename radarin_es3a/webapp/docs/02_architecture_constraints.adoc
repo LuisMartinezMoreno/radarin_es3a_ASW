@@ -1,0 +1,51 @@
+[[section-architecture-constraints]]
+== Architecture Constraints
+
+
+[options="header",cols="1,2"]
+.*Technical constraints*
+|===
+|*Constraint*|*Description*
+| *_Docker_* | _It is the tool we will use for create and manage Linux containers where some software, like the mongo database will run._ 
+| *_MongoDB_* | _It is a document database with the scalability and flexibility needed for this project._
+| *_Solid_* | _Solid specifications will guide us about how to implement a reliable, scalable, easy to mantain and stable software._ 
+| *Heroku* | _The environment in which the project will be deployed._ 
+|===
+
+
+[options="header",cols="1,2"]
+.*Organizative constraints*
+|===
+|*Constraint*|*Description*
+| *_Time limit_* | _The project will be released by the end of May 2021, with a main briefing the first week of May_
+| *_Team_* | _The project will be developed by a team of 6 components_
+| *_Version control_* | _The project will be managed using git, by creating issues that will be assign to a team component who will do it_
+|===
+
+
+[options="header",cols="1,2"]
+.*Political restrictions*
+|====
+|*Constraint*|*Description*
+| *_RGPD_* | _It is a regulation in EU law on data protection and privacy in the European Union the data of the users will be saved following the RGPD indications_
+|====
+
+
+[options="header",cols="1,2"]
+.*Security restrictions*
+|====
+|*Constraint*|*Description*
+| *_Inrupt PODS_* | _This tool will allow us to keep the information from each client private, each user has it's personal POD_
+| *_HTTPS_* | _In HTTPS, the communication protocol is encrypted using Transport Layer Security, so the communications with the server are more secure_
+|====
+
+
+=== Agreements
+
+[options="header",cols="1,2"]
+|===
+| *Agreement* | *Description*
+| *Languaje* | The system will be in Spanish, but the documentation in English
+| *Budget* | All the tools used are free
+| *arc42* | The documentation will be structured as arc42's rules suggest.
+|===

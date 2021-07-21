@@ -1,0 +1,21 @@
+[[section-design-decisions]]
+== Design Decisions
+
+
+=== Access  
+The application will have a log in screen that will ask for the WebID to connect to the user's Pod, alongside a user ID and a password. 
+Though the application will enforce the use of a personal data Pod, authentification will be done with the user credentials.
+ 
+=== Framework
+The application will be created making use of React.js, as it will allow for a better construction of the user interface. 
+Additionally, as React.js is designed so it can work with dynamic data, and given that our application will be always taking continous input on geolocalization, it presents a formidable advantage in terms of data management.
+Moreover, React.js' syntax is similar to that of HTML, with which our team is used to work. Even so, as Solid has a lot of coverage from React components libraries, and given the restriction to use Solid Pods as a mean of storing data, React will prove of bigger use to the team.
+ 
+=== Data storage
+Given the project is to be created following the Solid arquetype, some of our data will be storaged upon the Solid Pods. 
+However, the main chunk of information will be running alongside the database of Mongo DB, as it will improve velocity and data accesibility.
+Solid Pods will be used mainly to storage the user's email used when sending the notifications.
+ 
+=== Geolocalization 
+Geolocalization will dynamically updated on periodic intervals, using the Mongo DB database as an intermediate user. Solid Pods will not be used for the means of storing geolocalization data.
+

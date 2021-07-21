@@ -1,0 +1,27 @@
+[[section-quality-scenarios]]
+== Quality Requirements
+
+
+
+
+=== Quality Tree
+
+****
+image:images/10_QualityTree.png["Quality Tree"]
+****
+
+=== Quality Scenarios
+
+****
+[options="header",cols="1,2,3"]
+|===
+|*Attribute*|*Scenario*|*Priority*
+| *_Privacy and security_* | Use of PODs and Solid  | High
+| *_Accesibility_* | The application must can be used by all people | High
+| *_Availability_* | The application must be operational and accesible when required to use| Medium
+| *_Usability_* | The application must be easy to use | Medium
+| *_Testability_* | Unit tests, acceptance tests and load tests | Medium
+| *_Portability_* | The application can be used in PC or mobile device | Low
+| *_Internationalization_* | The application will be available in more than one language | Low
+|===
+****

@@ -1,0 +1,22 @@
+[[section-glossary]]
+== Glossary
+
+
+
+
+[options="header"]
+|===
+| Term         | Definition
+| Solid (Project)    | Technology that allows for storage of personal data in decentralized repositories
+| Pod     | Personal respository in which a user storage their data individually
+| WebID     | Unique key of a certain POD, very useful when you are trying to distingush a user.
+| React.js     | Javascript library designed around bulding user interfaces for web applications
+| Docker     | Virtualization system that allows any developer to work with a common set of characteristics
+| Application     |  Set of all the Radarin parts, this can be the web service or the application with its own respective modules.
+| Libraries     |  Collections of functionality from JavaScript or other platforms, meant to help in development.
+| Mongo DB     |  Database based on documents, which the application will use.
+|FriendList   | All the friends that a user has   
+| Hook     |    React feature which allow the programmers to do some actions without implementing a class 
+| Promise     | Is a Javascript feature, used for asynchronous programmation that "promises" that some information will be available in a future if it is not available at the requested moment.
+| Asynchronous     | It is a way of programming, which lets the computer to run some code in a non sychronous way, that means that some code will be before in the execution than some other parts
+|===

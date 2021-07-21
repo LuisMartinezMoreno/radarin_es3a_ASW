@@ -1,0 +1,96 @@
+[[section-runtime-view]]
+== Runtime View
+
+
+=== Register  
+
+Any potential user may want to register in the application, to start using the features provided. Register runs along the Solid system.
+
+1. The user touches the "Get a Solid Pod" button
+2. The user chooses credentials
+3. If successful, the user is provided with a Solid Pod account
+
+[plantuml,"Register diagram",png]
+----
+actor User
+User -> Registration menu: Touches "Get a Solid Pod" button
+Registration menu -> Pod interface: Redirects user to create Pod
+User -> Pod interface: Chooses credentials
+Pod interface --> User: Provides account
+----
+
+=== Log in  
+
+A potential user may log in the application via the log in screen. Log in comences upon entering the application, either in a mobile phone or a web browser, as the mobile app includes the exact behaviour.
+
+1. The user touches the log in button.
+2. The user enters their Solid credentials in a new window.
+3. The Solid Pod returns log in confirmation.
+4. The application services check if the log in is valid.
+5. The entities send the information needed to the services.
+6. The services prepare the functionality to be given to the user.
+7. The controllers provide the user with the functionality.
+
+[plantuml,"Log in diagram",png]
+----
+actor User
+User -> Application: Touches log in button
+Application -> Solid Pod: Sends request
+User -> Solid Pod: Enters credentials
+Solid Pod --> Application: Returns log in confirmation
+Application -> Services: Request validation
+Services -> Entities: Check validation
+Entities --> Services: Return validation 
+Services --> Controllers: Prepare functionality
+Controllers --> User: Provide functionality
+----
+
+****
+=== Register friends
+
+1. User1 touches the "add a friend" button.
+2. User1 enters said friend's WebID.
+3. User1 application sends a petition to User2 Pod with the information.
+4. User2 Pod notifies User2 application.
+5. User2 application waits for confirmation on the friend request from User2.
+6. User2 touches the "accept friend request" button.
+7. User2 application sends the information to User2 Pod.
+8. User2 Pod registers User1 as a friend, and sends the confirmation to User1 application.
+9. User1 application sends the information to User1 Pod.
+10. User1 application notifies User1.
+
+[plantuml,"Register friends diagram",png]
+----
+actor User1
+actor User2
+User1 -> User1Application: Touches the add a friend button
+User1 -> User1Application: Enters a friend's WebID
+User1Application --> User2Pod: Sends petition
+User2Pod -> User2Application: Notifies petition
+User2Application --> User2: Wait for confirmation
+User2 -> User2Application: Touches the accept request button
+User2Application -> User2Pod: Sends confirmation
+User2Pod -> User2Pod: Register User1 as friend
+User2Pod -> User1Application: Sends confirmation
+User1Application -> User1Pod: Sends confirmation
+User1Application -> User1: Notifies confirmation
+----
+****
+
+=== Geolocate friends  
+
+1. The user enters the maps.
+2. The application request the geolocalization information of added friends in the database.
+3. The database sends back the information.
+4. The application shows the user the information.
+
+[plantuml,"Geolocate friends diagram",png]
+----
+actor User
+User -> Application: Enters the map
+Application -> Database: Request information
+Database --> Application: Provides geolocalization data
+Application --> User: Shows locations
+----
+
+

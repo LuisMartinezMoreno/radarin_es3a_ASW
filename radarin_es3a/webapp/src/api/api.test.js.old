@@ -1,0 +1,53 @@
+import { addUser, deleteFromDB ,getUsers, getUserByWebId, updateToken , updateLocation , sendEmail ,sendNotification} from './api';
+
+// // Comprueba que getUserByWebId() devuelve undefined si no existe en la base de datos
+//     it('getUserByWebId() retorna undefined si no encuentra el usuario', () => {
+//         return getUserByWebId("none").then(data =>
+//         expect(data).toBeUndefined());
+//     });
+// // Comprueba que getUsers() devuelve undefined si no existe en la base de datos
+//     it('getUsers() retorna una lista de usuarios', () => {
+//         return getUsers().then(data =>
+//         expect(data).toBeDefined());
+//     });
+
+// // Comprueba que updateToken() devuelve undefined si el usuario no exite
+//     it('updateToken() retorna undefined', () => {
+//         return updateToken("none","12342").then(data =>
+//         expect(data).toBeUndefined());
+//     });
+
+// // Comprueba que updateLocation() devuelve undefined si el usuario no exite
+//     it('updateLocation() retorna undefined', () => {
+//         return updateLocation("none","12342").then(data =>
+//         expect(data).toBeUndefined());
+//     });
+// // Comprueba que deleteFromDB() devuelve un error si el usuario no exite
+//     it('deleteFromDB() retorna undefined', () => {
+//         return deleteFromDB("none").then(data =>
+//         expect(data).toBeDefined());
+//     });
+// Introduce un usuario en base de datos con su localizacion
+    it('addUser() introduce un usuario en la base de datos', () => {
+        return addUser("none1",{lat:"424",lng:"4124"}).then(data =>
+        expect(data).toBeDefined());
+    });
+
+// Comprueba que getUserByWebId() devuelve undefined si no existe en la base de datos
+    it('getUserByWebId() retorna undefined si no encuentra el usuario', () => {
+        return getUserByWebId("none1").then(data =>
+        expect(data).toBeDefined());
+        
+    });
+
+// updateLocation() puede modificar los datos de la base de datos
+    it('updateLocation() puede modificar los datos de la base de datos', () => {
+        return updateLocation("none1",{lat:"1234",lng:"4214"}).then(data =>
+        expect(data).toBeDefined());
+    });
+
+// Elimina a un usuario de la base de datos
+    it('deleteFromDB() elimina a un usuario', () => {
+        return deleteFromDB("none1").then(data =>
+        expect(data).toBeDefined());
+    });

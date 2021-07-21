@@ -1,0 +1,26 @@
+== Deployment View
+****
+
+image:images/07-deploymentDiagram.png[Infraestructure]
+
+The user will need his phone connected to the internet, where he can deploy the app.
+Our application, Radarin, will be hosted in github pages.
+Solid PODs are required for using the application, in our case, we chose the Irupt provider of PODs. The POD is like a server, so can be accesible anywhere in the world.
+
+.Motivation
+The aim of this project is to allow people to locate themselves with their friends with a simple interface, which will be based in having access to user's PODs with the location info.
+
+.Infraestructure
+As it is shown in the diagram at the beginning of the section the main parts of the project will be:
+
+*The user's device
+
+*The web server, where the app really runs
+
+*The application itself
+
+*The POD server
+
+*The user's PODs
+
+****

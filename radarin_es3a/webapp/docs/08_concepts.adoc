@@ -1,0 +1,40 @@
+[[section-concepts]]
+== Cross-cutting Concepts
+
+
+=== Domain model
+
+
+image:images/StarUML_DomainModel.png[Domain model]
+
+User: The user class is a representation of on client of the application, one user obtains the basic information of our data base then the remaining from the POD. One user has one list of users that will be his friends and one waypoint that will be his current location. 
+
+Waypoint: This stands for the current location of one user, it stores the data position and the name of this waypoint/marker.
+
+Position: Object that stores the latitude and longitude of one position in the map.
+
+image:images/08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscutting concepts"]
+
+
+=== User Experience concepts (UX)
+
+In this application we will be taking two fundamental goals for the UI Design.
+One of them is that it has to be emotionally acceptable, this will give the user satisfaction, and mastery of the application. On the other hand, we will be designing this application cognitively comprehensible, every element should be controllable, predictable and consistent.
+
+
+=== Safety and security
+
+The main reason for using Solid is because it brings safety and security for our data, the user is in charge of their data, with this method he can manage the amount of stored data he has, giving or taking permissions.
+
+
+=== Performance
+
+Due to the use of MongoDB, we do not have the necessity to stop the location refreshing . This will be done in short periods of time.
+
+
+=== Architecture and design patterns
+
+Radarin follows the Model View Controller(MVC) architecture. All the persistence of this aplication will be following the rules of solid specifications. 
+We will use React, Docker and Solid to develop this application.
+
+
