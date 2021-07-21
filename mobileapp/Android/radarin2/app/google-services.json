@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "407429701050",
+    "project_id": "radarin-es3a",
+    "storage_bucket": "radarin-es3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407429701050:android:71ce7ec10ee1f1f9981183",
+        "android_client_info": {
+          "package_name": "com.example.radarin2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407429701050-aouic1h1rh9vt4p2ldeilb8ga5vrl09i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr8sdoljkYBk1uFWGFo-tjvvT8PNllISw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407429701050-aouic1h1rh9vt4p2ldeilb8ga5vrl09i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
